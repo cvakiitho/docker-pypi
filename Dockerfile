@@ -2,6 +2,7 @@ FROM alpine:3.5
 MAINTAINER Josh VanderLinden <codekoala@gmail.com>
 
 RUN apk update && \
+    apk add bash && \
     apk add py-pip && \
     pip install --upgrade pip && \
     mkdir -p /srv/pypi
