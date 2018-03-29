@@ -1,9 +1,8 @@
-FROM alpine:3.5
-MAINTAINER Josh VanderLinden <codekoala@gmail.com>
+FROM ubuntu:xenial
+MAINTAINER Tomas Hartmann <cvakiitho@gmail.com>
 
-RUN apk update && \
-    apk add bash && \
-    apk add py-pip && \
+RUN apt-get update -qqy && \
+    apt-get install python-pip -qqy && \
     pip install --upgrade pip && \
     mkdir -p /srv/pypi
 
