@@ -11,7 +11,7 @@ touch "${PYPI_PASSWD_FILE}"
 _extra="${PYPI_EXTRA}"
 
 # allow existing packages to be overwritten
-if [[ "${PYPI_OVERWRITE}" != "" ]]; then
+if [ "${PYPI_OVERWRITE}" != "" ]; then
     _extra="${_extra} --overwrite"
 fi
 
