@@ -17,7 +17,7 @@ fi
 
 exec /usr/local/bin/pypi-server \
     --port ${PYPI_PORT} \
-    --passwords "${PYPI_PASSWD_FILE}" \
+    --password "${PYPI_PASSWD}" \
     --authenticate "${PYPI_AUTHENTICATE}" \
     ${_extra} \
     "${PYPI_ROOT}"
